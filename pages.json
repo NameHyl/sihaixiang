@@ -1,0 +1,103 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "四海香"
+			}
+		},{
+		    "path" : "pages/car/car",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},{
+			"path": "pages/report/report",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		},{
+			"path": "pages/person/person",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "烹饪行程",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/like/like",
+			"style": {
+				"navigationBarTitleText": "心愿单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/start/start",
+			"style": {
+				"navigationBarTitleText": "启动页",
+				"enablePullDownRefresh": false
+			}
+
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "四海香",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83", // 默认文字颜色
+		"selectedColor": "#f01", // 激活文字颜色
+		"borderStyle": "black", // 边框样式
+		"backgroundColor": "#ffffff", // 背景颜色
+		"list": [{
+				"pagePath": "pages/index/index", // 要跳转的路径
+				"iconPath": "static/footer1.png", // 默认图标
+				"selectedIconPath": "static/footer1-sel.png", // 选中后的图标
+				"text": "首页" // 文字
+			},
+			{
+				"pagePath": "pages/like/like", // 要跳转的路径
+				"iconPath": "static/footer2.png", // 默认图标
+				"selectedIconPath": "static/footer2-sel.png", // 选中后的图标
+				"text": "心愿单" // 文字
+			},
+			{
+				"pagePath": "pages/order/order", // 要跳转的路径
+				"iconPath": "static/footer3.png", // 默认图标
+				"selectedIconPath": "static/footer3-sel.png", // 选中后的图标
+				"text": "烹饪行程" // 文字
+			},
+			{
+				"pagePath": "pages/person/person", // 要跳转的路径
+				"iconPath": "static/footer4.png", // 默认图标
+				"selectedIconPath": "static/footer4-sel.png", // 选中后的图标
+				"text": "我的" // 文字
+			}
+		]
+	},
+	"subPackages": {
+		"root": "pagesA",
+		"pages": [
+			{
+			    "path" : "pagesA/myBag/myBag",
+			    "style" : {
+			        "navigationBarTitleText": "我的分包",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			}
+		]
+	}
+}
